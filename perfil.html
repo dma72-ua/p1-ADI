@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --c-dark: #2C3930;
+      --c-green: #3F4F44;
+      --c-brown: #A27B5C;
+      --c-light: #DCD7C9;
+    }
+  </style>
+</head>
+<body class="bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
+  <!-- Header -->
+  <header data-component="SiteHeader" class="bg-[var(--c-dark)] text-[var(--c-light)] shadow-md">
+    <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">ReadLogs</h1>
+      <nav data-component="SiteNavBar">
+        <ul class="flex space-x-6">
+          <li><a href="inicio.html" class="hover:text-[var(--c-brown)] transition">Inicio</a></li>
+          <li><a href="libros.html" class="hover:text-[var(--c-brown)] transition">Libros</a></li>
+          <li><a href="perfil.html" class="hover:text-[var(--c-brown)] transition">Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main data-component="data-outlet" class="max-w-3xl mx-auto p-6">
+    <h1 class="text-3xl font-semibold mb-6 text-[var(--c-green)]">Perfil</h1>
+
+    <!-- Profile Card -->
+    <section class="bg-white rounded-2xl shadow p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
+      <!-- Foto -->
+      <img src="https://i.pravatar.cc/150?img=12" alt="Foto de perfil"
+           class="w-32 h-32 rounded-full border-4 border-[var(--c-brown)] shadow-md">
+
+      <!-- Datos -->
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold text-[var(--c-dark)]">María López García</h2>
+        <p class="text-[var(--c-green)]">📍 Madrid, España</p>
+        <p class="text-[var(--c-green)]">📧 maria.lopez@example.com</p>
+        <p class="text-[var(--c-green)]">📚 Miembro desde 2023</p>
+
+        <!-- Biografía -->
+        <p class="mt-4 text-[var(--c-dark)] leading-relaxed">
+          Apasionada de la literatura hispanoamericana y las novelas históricas. 
+          Le gusta descubrir nuevos autores y compartir reseñas con la comunidad.
+        </p>
+
+        <!-- Intereses -->
+        <div class="mt-4">
+          <h3 class="text-lg font-semibold text-[var(--c-green)] mb-2">Intereses</h3>
+          <ul class="list-disc list-inside text-[var(--c-dark)]">
+            <li>Realismo mágico</li>
+            <li>Novela histórica</li>
+            <li>Poesía contemporánea</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Libros recientes -->
+    <section class="mt-8">
+      <h3 class="text-2xl font-semibold text-[var(--c-green)] mb-4">Últimos libros leídos</h3>
+      <ul class="space-y-3">
+        <li class="bg-white p-4 rounded-xl shadow flex justify-between items-center">
+          <span class="font-medium">Pedro Páramo</span>
+          <span class="text-sm text-[var(--c-green)]">Juan Rulfo</span>
+        </li>
+        <li class="bg-white p-4 rounded-xl shadow flex justify-between items-center">
+          <span class="font-medium">Rayuela</span>
+          <span class="text-sm text-[var(--c-green)]">Julio Cortázar</span>
+        </li>
+        <li class="bg-white p-4 rounded-xl shadow flex justify-between items-center">
+          <span class="font-medium">La ciudad y los perros</span>
+          <span class="text-sm text-[var(--c-green)]">Mario Vargas Llosa</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer data-component="SiteFooter" class="bg-[var(--c-dark)] text-[var(--c-light)] text-center py-4 mt-12">
+    © 2025 – ReadLogs
+  </footer>
+</body>
+</html>
