@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Lecturas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --c-dark: #2C3930;
+      --c-green: #3F4F44;
+      --c-brown: #A27B5C;
+      --c-light: #DCD7C9;
+    }
+  </style>
+</head>
+<body class="bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
+  <!-- Header -->
+  <header data-component="SiteHeader" class="bg-[var(--c-dark)] text-[var(--c-light)] shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">ReadLogs</h1>
+      <nav data-component="SiteNavBar">
+        <ul class="flex space-x-6">
+          <li><a href="inicio.html" class="hover:text-[var(--c-brown)] transition">Inicio</a></li>
+          <li><a href="libros.html" class="hover:text-[var(--c-brown)] transition">Libros</a></li>
+          <li><a href="lecturas.html" class="hover:text-[var(--c-brown)] transition">Lecturas</a></li>
+          <li><a href="perfil.html" class="hover:text-[var(--c-brown)] transition">Perfil</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main data-component="data-outlet" class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-[var(--c-green)] mb-8">Mis Lecturas</h1>
+
+    <!-- Actualmente leyendo -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold text-[var(--c-brown)] mb-4">📖 Actualmente leyendo</h2>
+      <ul class="space-y-4">
+        <!-- Libro en progreso -->
+        <li class="bg-white rounded-xl shadow p-4">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">La sombra del viento</h3>
+            <span class="text-sm text-[var(--c-green)]">Página 320 / 576</span>
+          </div>
+          <!-- Barra de progreso -->
+          <div class="w-full bg-[var(--c-light)] rounded-full h-3 mt-2">
+            <div class="bg-[var(--c-brown)] h-3 rounded-full" style="width:55%"></div>
+          </div>
+        </li>
+
+        <li class="bg-white rounded-xl shadow p-4">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Rayuela</h3>
+            <span class="text-sm text-[var(--c-green)]">Página 150 / 600</span>
+          </div>
+          <div class="w-full bg-[var(--c-light)] rounded-full h-3 mt-2">
+            <div class="bg-[var(--c-brown)] h-3 rounded-full" style="width:25%"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Libros leídos -->
+    <section>
+      <h2 class="text-2xl font-semibold text-[var(--c-brown)] mb-4">✅ Libros leídos</h2>
+      <ul class="space-y-4">
+        <!-- Libro leído -->
+        <li class="bg-white rounded-xl shadow p-4">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Cien años de soledad</h3>
+            <span class="text-sm text-[var(--c-green)]">471 páginas</span>
+          </div>
+          <!-- Puntuación -->
+          <div class="mt-2 text-yellow-500">⭐⭐⭐⭐⭐</div>
+        </li>
+
+        <li class="bg-white rounded-xl shadow p-4">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">Don Quijote de la Mancha</h3>
+            <span class="text-sm text-[var(--c-green)]">556 páginas</span>
+          </div>
+          <div class="mt-2 text-yellow-500">⭐⭐⭐⭐</div>
+        </li>
+
+        <li class="bg-white rounded-xl shadow p-4">
+          <div class="flex justify-between items-center">
+            <h3 class="text-xl font-semibold">La casa de los espíritus</h3>
+            <span class="text-sm text-[var(--c-green)]">490 páginas</span>
+          </div>
+          <div class="mt-2 text-yellow-500">⭐⭐⭐⭐⭐</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer data-component="SiteFooter" class="bg-[var(--c-dark)] text-[var(--c-light)] text-center py-4 mt-12">
+    © 2025 – ReadLogs
+  </footer>
+</body>
+</html>
