@@ -15,5 +15,6 @@ Aplicación web para dar la posibilidad de hacer un seguimiento de la lectura de
 * Un administrador debe poder añadir y eliminar libros.
 * Un administrador debe poder regular comentarios de otros usuarios.
 
+## Modelo de datos
 
-
+![Diagrama del modelo del dominio](p1-ADI-diagrama.png "Diagrama del modelo de dominio")
