@@ -18,3 +18,12 @@ Aplicación web para dar la posibilidad de hacer un seguimiento de la lectura de
 ## Modelo de datos
 
 ![Diagrama del modelo del dominio](p1-ADI-diagrama.png "Diagrama del modelo de dominio")
+
+## Prompts usados
+
+* Como puedo integrar estos colores en una página HTML con TailwindCSS?
+    #2C3930, #3F4F44, A27B5C, #DCD7C9.
+* Puedes generar datos aleatorios para un perfil de usuario.
+* Puedes generar una lista de libros de ejemplo con el titulo y número de páginas.
+* Puedes generar una lista aleatoria de libros actualmente leyendo y otra de libros leidos?
+* Hay alguna forma de hacer que el footer este siempre abajo?
