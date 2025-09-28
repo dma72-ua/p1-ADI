@@ -14,8 +14,7 @@
     }
   </style>
 </head>
-<body class="bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
-  <!-- Header -->
+<body class="flex flex-col min-h-screen bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
   <header data-component="SiteHeader" class="bg-[var(--c-dark)] text-[var(--c-light)] shadow-md">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
       <h1 class="text-2xl font-bold">ReadLogs</h1>
@@ -30,30 +29,24 @@
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main data-component="data-outlet" class="max-w-3xl mx-auto p-6">
+  <main data-component="data-outlet" class="flex-1 max-w-6xl mx-auto p-6">
     <h1 class="text-3xl font-semibold mb-6 text-[var(--c-green)]">Perfil</h1>
 
-    <!-- Profile Card -->
-    <section class="bg-white rounded-2xl shadow p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
-      <!-- Foto -->
+    <section data-component="Perfil" class="bg-white rounded-2xl shadow p-6 flex flex-col md:flex-row items-center md:items-start gap-6">
       <img src="https://i.pravatar.cc/150?img=12" alt="Foto de perfil"
            class="w-32 h-32 rounded-full border-4 border-[var(--c-brown)] shadow-md">
 
-      <!-- Datos -->
       <div class="flex-1">
         <h2 class="text-2xl font-bold text-[var(--c-dark)]">María López García</h2>
         <p class="text-[var(--c-green)]">📍 Madrid, España</p>
         <p class="text-[var(--c-green)]">📧 maria.lopez@example.com</p>
         <p class="text-[var(--c-green)]">📚 Miembro desde 2023</p>
 
-        <!-- Biografía -->
         <p class="mt-4 text-[var(--c-dark)] leading-relaxed">
           Apasionada de la literatura hispanoamericana y las novelas históricas. 
           Le gusta descubrir nuevos autores y compartir reseñas con la comunidad.
         </p>
 
-        <!-- Intereses -->
         <div class="mt-4">
           <h3 class="text-lg font-semibold text-[var(--c-green)] mb-2">Intereses</h3>
           <ul class="list-disc list-inside text-[var(--c-dark)]">
@@ -65,8 +58,7 @@
       </div>
     </section>
 
-    <!-- Libros recientes -->
-    <section class="mt-8">
+    <section data-component="Leidos" class="mt-8">
       <h3 class="text-2xl font-semibold text-[var(--c-green)] mb-4">Últimos libros leídos</h3>
       <ul class="space-y-3">
         <li class="bg-white p-4 rounded-xl shadow flex justify-between items-center">
@@ -85,7 +77,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer data-component="SiteFooter" class="bg-[var(--c-dark)] text-[var(--c-light)] text-center py-4 mt-12">
     © 2025 – ReadLogs
   </footer>

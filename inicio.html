@@ -14,8 +14,7 @@
     }
   </style>
 </head>
-<body class="bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
-  <!-- Header -->
+<body class="flex flex-col min-h-screen bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
   <header data-component="SiteHeader" class="bg-[var(--c-dark)] text-[var(--c-light)] shadow-md">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
       <h1 class="text-2xl font-bold">ReadLogs</h1>
@@ -30,10 +29,8 @@
     </div>
   </header>
 
-  <!-- Main Content -->
-  <main data-component="data-outlet" class="max-w-6xl mx-auto p-6">
-    <!-- Hero / Bienvenida -->
-    <section data-component="saludo" class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl shadow p-6">
+  <main data-component="data-outlet" class="flex-1 max-w-6xl mx-auto p-6">
+    <section data-component="Saludo" class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl shadow p-6">
       <div class="flex-1">
         <h1 class="font-bold text-4xl mb-4 text-[var(--c-green)]">Bienvenido a <span class="text-[var(--c-brown)]">ReadLogs</span> 📚</h1>
         <p class="text-lg leading-relaxed">
@@ -50,8 +47,7 @@
       </div>
     </section>
 
-    <!-- Funcionalidades -->
-    <section class="mt-12" data-component="funcionalidades">
+    <section class="mt-12" data-component="Funcionalidades">
       <h2 class="font-bold text-3xl mb-6 text-[var(--c-green)] text-center">¿Qué puedes hacer en ReadLogs?</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white rounded-2xl shadow p-6 text-center">
@@ -69,8 +65,7 @@
       </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="mt-12 text-center">
+    <section data-component="Libros" class="mt-12 text-center">
       <h2 class="text-3xl font-bold text-[var(--c-green)] mb-4">¡Empieza ahora mismo!</h2>
       <a href="libros.html" 
          class="inline-block px-8 py-3 rounded-xl bg-[var(--c-brown)] text-white text-lg font-semibold hover:bg-[var(--c-green)] transition">
@@ -79,7 +74,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer data-component="SiteFooter" class="bg-[var(--c-dark)] text-[var(--c-light)] text-center py-4 mt-12">
     © 2025 – ReadLogs
   </footer>

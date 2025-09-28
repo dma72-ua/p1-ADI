@@ -14,8 +14,7 @@
     }
   </style>
 </head>
-<body class="bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
-  <!-- Header -->
+<body class="flex flex-col min-h-screen bg-[var(--c-light)] text-[var(--c-dark)] font-sans">
   <header data-component="SiteHeader" class="bg-[var(--c-dark)] text-[var(--c-light)] shadow-md">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
       <h1 class="text-2xl font-bold">ReadLogs</h1>
@@ -32,22 +31,18 @@
 
 
 
-  <!-- Main Content -->
-  <main data-component="data-outlet" class="max-w-3xl mx-auto p-6">
+  <main data-component="data-outlet" class="flex-1 max-w-6xl mx-auto p-6">
     <section data-component="Libros">
       <h1 class="text-3xl font-semibold mb-6 text-[var(--c-green)]">Libros</h1>
 
-      <!-- Search -->
       <div class="mb-6">
         <input type="text" placeholder="Buscar libros"
           class="w-full px-4 py-2 rounded-lg border border-[var(--c-green)] focus:outline-none focus:ring-2 focus:ring-[var(--c-brown)] bg-white">
       </div>
 
-      <!-- Book List -->
       <ul data-component="BookList" class="space-y-4">
-        <!-- El Quijote -->
         <li data-component="BookCard"
-            class="bg-white rounded-2xl shadow p-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+            class="bg-white rounded-2xl shadow p-4 flex flex-col md:flex-row justify-between items-start md:items-center space-x-10">
           <div>
             <a href="libro/el-quijote" class="hover:underline">
               <h2 class="text-xl font-bold text-[var(--c-dark)]">Don Quijote de la Mancha</h2>
@@ -59,7 +54,6 @@
           </button>
         </li>
 
-        <!-- Cien años de soledad -->
         <li data-component="BookCard"
             class="bg-white rounded-2xl shadow p-4 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div>
@@ -73,7 +67,6 @@
           </button>
         </li>
 
-        <!-- La sombra del viento -->
         <li data-component="BookCard"
             class="bg-white rounded-2xl shadow p-4 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div>
@@ -87,7 +80,6 @@
           </button>
         </li>
 
-        <!-- Ficciones -->
         <li data-component="BookCard"
             class="bg-white rounded-2xl shadow p-4 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div>
@@ -101,7 +93,6 @@
           </button>
         </li>
 
-        <!-- La casa de los espíritus -->
         <li data-component="BookCard"
             class="bg-white rounded-2xl shadow p-4 flex flex-col md:flex-row justify-between items-start md:items-center">
           <div>
@@ -118,7 +109,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer data-component="SiteFooter" class="bg-[var(--c-dark)] text-[var(--c-light)] text-center py-4 mt-12">
     © 2025 – ReadLogs
   </footer>
